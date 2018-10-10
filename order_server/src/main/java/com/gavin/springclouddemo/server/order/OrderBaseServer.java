@@ -2,8 +2,6 @@ package com.gavin.springclouddemo.server.order;
 
 import com.gavin.springclouddemo.api.IOrderBaseServer;
 import com.gavin.springclouddemo.entity.OrderInfo;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderBaseServer implements IOrderBaseServer {
 
     @ResponseBody
-    @RequestMapping(value="getOrderInfo", method= RequestMethod.POST)
     @Override
     public OrderInfo getOrderInfoByUserName(String userName) {
         OrderInfo orderInfo = new OrderInfo();
