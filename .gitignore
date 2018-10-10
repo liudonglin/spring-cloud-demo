@@ -10,6 +10,32 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+### IntelliJ IDEA ###
+.gradle/
+.idea
+*.iws
+*.iml
+*.ipr
+
+npm-debug.log*
+
+.DS_Store
+node_modules/
+!frontend/static/
+dist/
+*.log
+test/unit/coverage
+test/e2e/reports
+
+dubbo-registry-*.cache
+dubbo-registry-*.cache.lock
+
+target
+.metadata
+.settings
+.classpath
+.project
+
 # Package Files #
 *.jar
 *.war
