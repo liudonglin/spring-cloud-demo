@@ -13,4 +13,6 @@ public interface IOrderBaseServer {
     @RequestMapping(value="getOrderInfo", method= RequestMethod.POST)
     OrderInfo getOrderInfoByUserName(@RequestParam(value = "userName") String userName);
 
+    @RequestMapping(value="getOrderWithSleep", method= RequestMethod.POST)
+    String getOrderWithSleep();
 }

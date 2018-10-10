@@ -29,4 +29,10 @@ public class MemberBaseServer {
         return orderInfo.toString();
     }
 
+    @RequestMapping(value = "getSleepOrderInfo",method = RequestMethod.GET)
+    public String getSleepOrderInfo(){
+        String orderInfo =  orderService.getOrderWithSleep();
+        return orderInfo;
+    }
+
 }
