@@ -9,8 +9,20 @@ eureka:
     service-url:
       defaultZone: http://localhost:8100/eureka/
 
+###Feign客户端超时时间配置
 ribbon:
   ReadTimeout: 5000
   ConnectTimeout: 5000
 
+###开启hystrix断熔器
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
 
