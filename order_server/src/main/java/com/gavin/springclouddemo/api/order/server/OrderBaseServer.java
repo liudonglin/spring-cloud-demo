@@ -1,4 +1,4 @@
-package com.gavin.springclouddemo.server.order;
+package com.gavin.springclouddemo.api.order.server;
 
 import com.gavin.springclouddemo.api.IOrderBaseServer;
 import com.gavin.springclouddemo.entity.OrderInfo;

@@ -1,5 +1,6 @@
-package com.gavin.springclouddemo.server.member;
+package com.gavin.springclouddemo.api.member.server;
 
+import com.gavin.springclouddemo.api.member.feign.IOrderBaseServerFeign;
 import com.gavin.springclouddemo.entity.OrderInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,13 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MemberBaseServer {
 
     @Autowired
-    public IFeignOrderBaseServer orderService;
-
-    @ResponseBody
-    @RequestMapping(value = "getMemberInfo",method = RequestMethod.GET)
-    public String getMemberInfo(){
-        return "name: gavin , age: 28";
-    }
+    public IOrderBaseServerFeign orderService;
 
     @ResponseBody
     @RequestMapping(value = "getMemberOrderInfo",method = RequestMethod.GET)
