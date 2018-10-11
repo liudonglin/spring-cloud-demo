@@ -8,6 +8,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8100/eureka/
+    register-with-eureka: true
+    fetch-registry: true
 
 ###Feign客户端超时时间配置
 ribbon:
@@ -19,6 +21,7 @@ feign:
   hystrix:
     enabled: true
 
+#hystrix设置关闭超时
 #hystrix:
 #  command:
 #    default:
@@ -26,3 +29,11 @@ feign:
 #        timeout:
 #          enabled: false
 
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000

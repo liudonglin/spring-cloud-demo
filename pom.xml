@@ -12,6 +12,7 @@
         <module>member_server</module>
         <module>api</module>
         <module>order_server</module>
+        <module>zuul_gateway</module>
     </modules>
     <packaging>pom</packaging>
 
