@@ -13,6 +13,7 @@
         <module>api</module>
         <module>order_server</module>
         <module>zuul_gateway</module>
+        <module>zipkin_server</module>
     </modules>
     <packaging>pom</packaging>
 

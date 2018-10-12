@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: member-server
+  zipkin:
+    base-url: http://localhost:8300
 
 eureka:
   client:
@@ -28,8 +30,7 @@ feign:
 #      execution:
 #        timeout:
 #          enabled: false
-
-
+#hystrix设置3秒超时
 hystrix:
   command:
     default:
@@ -37,3 +38,4 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 3000
+
