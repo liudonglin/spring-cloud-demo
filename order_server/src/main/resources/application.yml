@@ -12,3 +12,32 @@ eureka:
       defaultZone: http://localhost:8100/eureka/
     register-with-eureka: true
     fetch-registry: true
+
+###Feign客户端超时时间配置
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+###开启hystrix断熔器
+feign:
+  hystrix:
+    enabled: true
+
+#hystrix设置关闭超时
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: false
+#hystrix设置3秒超时
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+
+swagger:
+  base-package: com.gavin.springclouddemo.api.order.server

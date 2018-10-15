@@ -38,4 +38,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 3000
+swagger:
+  base-package: com.gavin.springclouddemo.api.member.server
+
 
