@@ -41,4 +41,10 @@ hystrix:
 swagger:
   base-package: com.gavin.springclouddemo.api.member.server
 
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: application
+  meta: http://localhost:8080
+
 
