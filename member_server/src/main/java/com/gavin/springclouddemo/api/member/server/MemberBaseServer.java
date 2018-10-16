@@ -38,13 +38,13 @@ public class MemberBaseServer {
         return orderInfo;
     }
 
-    @Value("${config_info}")
-    private String config;
+    //@Value("${config_info}")
+    //private String config;
 
     @ApiOperation(value = "测试apollo获取配置信息", notes = "测试apollo获取配置信息")
-    @RequestMapping("/getConfigInfo")
+    @RequestMapping(value ="/getConfigInfo", method = RequestMethod.GET)
     public String getConfigInfo(){
-        return config;
+        return "apollo动态配置的值";
     }
 
 }
