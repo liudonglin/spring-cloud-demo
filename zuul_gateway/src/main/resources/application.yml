@@ -13,7 +13,7 @@ eureka:
 zuul:
   routes:
     api-menmber:
-      path: /api-menmber/**
+      path: member-server
       serviceId: member-server
     api-order:
       path: /api-order/**

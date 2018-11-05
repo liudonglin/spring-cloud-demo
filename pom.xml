@@ -14,8 +14,8 @@
         <module>order_server</module>
         <module>zuul_gateway</module>
         <module>zipkin_server</module>
-        <module>auth-server</module>
         <module>auth_server</module>
+        <module>gateway_server</module>
     </modules>
     <packaging>pom</packaging>
 
